@@ -12,6 +12,22 @@
   }else{
     sub.innerHTML = 'Subscribe';
   } " class="js-subscribe">Subscribe</button>
-  <script></script>
+  <p>Amazon Shipping Calculator</p>
+  <input placeholder="Cost of order" class="js-cost-input">
+  <button onclick="CalculateTotal();">Calculate</button>
+  <p class="js-cost"></p>
+  <script>
+    function CalculateTotal(){
+      const butt = document.querySelector('.js-cost-input');
+      let cost = Number(butt.value);
+      //console.log(cost);
+      //console.log(typeof cost);
+      if(cost < 40){
+         cost = cost + 10;
+         console.log(cost);
+      }
+      document.querySelector('.js-cost').innerHTML = `${cost}`;
+    }
+  </script>
 </body>
 </html>
