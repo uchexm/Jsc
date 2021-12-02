@@ -9,7 +9,9 @@ for (let i = 0; i < todoList.length; i++){
   // const name = todoObj.name;
   // const dueDate = todoObj.dueDate;
   const {name, dueDate} = todoObj
-  const html = `<p>${name} ${dueDate} <button onclick="todoList.splice(${i}, 1); renderList();">Delete</button> </p>`
+  const html = `<div>${name} </div> 
+  <div>${dueDate} </div>
+  <button onclick="todoList.splice(${i}, 1); renderList();">Delete</button>`
   todoListHtml += html;
 }
 //console.log(todoListHtml);
@@ -25,7 +27,6 @@ function addTodo(){
   const dateInput = document.querySelector('.js-date');
   const dueDate = dateInput.value;
   todoList.push({name: name, dueDate: dueDate});
-  console.log(todoList);
 
   inputElement.value = '';
 
