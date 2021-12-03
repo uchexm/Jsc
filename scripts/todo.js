@@ -11,7 +11,7 @@ for (let i = 0; i < todoList.length; i++){
   const {name, dueDate} = todoObj
   const html = `<div>${name} </div> 
   <div>${dueDate} </div>
-  <button onclick="todoList.splice(${i}, 1); renderList();">Delete</button>`
+  <button onclick="todoList.splice(${i}, 1); renderList();" class="delete-todo">Delete</button>`
   todoListHtml += html;
 }
 //console.log(todoListHtml);
