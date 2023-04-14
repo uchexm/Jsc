@@ -7,7 +7,7 @@
 </head>
 <body>
   <script>
-    console.log(typeof true);
+    /*console.log(typeof true);
     true
     false
 
@@ -29,7 +29,18 @@
       console.log("A little bit longer");
     }else{
       console.log('Sorry You are not of age');
-    }
+    }*/
+    const result = true ? 'truthy' : 'falsy' //Tenary operator
+    console.log(result);
+
+    false && console.log('hello'); //Guard operator &&
+
+    const message = false && 'hello';
+    console.log(message);
+
+    const currency = 'EUR' || 'USD'; // Default operator ||
+    console.log(currency);
+
   </script>
 </body>
 </html>
