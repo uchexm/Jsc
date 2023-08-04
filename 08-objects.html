@@ -18,7 +18,7 @@
    console.log(product);
    delete product.newProperty;
    console.log(product);
-   */
+   
   const product2 = {
     name: 'shirt',
     ['delivery-time']: '1 day',
@@ -42,6 +42,23 @@
 
   const jsonstring = JSON.stringify(product2);
   console.log(JSON.parse(jsonstring));
+  */
+
+  console.log('hello'.length);
+  console.log('hello'.toLocaleUpperCase());
+
+  const obj = {
+    message: 'hello'
+  };
+  const obj1 = obj
+  obj.message = 'nice';
+  console.log(obj);
+  console.log(obj1);
+  const object2 = {
+    message: 'nice'
+  }
+  console.log(object2 === obj);
+  console.log(obj1 === obj);
   </script>
 </body>
 </html>
