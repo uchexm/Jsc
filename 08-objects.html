@@ -59,6 +59,32 @@
   }
   console.log(object2 === obj);
   console.log(obj1 === obj);
+
+
+
+  const object3 ={
+    message: 'Good job!',
+    price: 988
+  };
+ //const meesage = object3.message;
+  const { message, price } = object3;
+  console.log(message);
+  console.log(price);
+
+
+  const object4 = {
+    // message: message
+    message, 
+   // method: function funct1(){
+   //   console.log('method');
+   // }
+    method(){
+      console.log('method');
+    }
+  };
+  console.log(object4);
+  object4.method();
+
   </script>
 </body>
 </html>
